@@ -1,0 +1,4 @@
+<p *ngIf="getValue; else novalue" class="alert alert-info">{{ getValue }}</p>
+<ng-template #novalue>
+  <p class="alert alert-warning">User not added yet</p>
+</ng-template>

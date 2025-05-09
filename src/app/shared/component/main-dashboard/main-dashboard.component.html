@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <div class="row mb-2">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <label for="userName">User Name</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            #userName
+            class="form-control mb-2"
+          />
+          <button (click)="onaddUser(userName)" class="btn btn-info btn-block">Add User</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 offset-md-1"><app-comp1></app-comp1></div>
+    <div class="col-md-3 offset-md-1"><app-comp2></app-comp2></div>
+    <div class="col-md-3 offset-md-1"><app-comp3></app-comp3></div>
+  </div>
+</div>
